@@ -1,0 +1,31 @@
+,GO.ID,Term,Level,Annotated,Significant,Expected,Fishers,Ontology
+11,GO:0030619,U1 snRNA binding,7,2,2,0.03,0.00019,MF
+1,GO:0006122,mitochondrial electron transport, ubiqui...,15,4,2,0.05,0.0010,BP
+2,GO:0006030,chitin metabolic process,7,6,2,0.08,0.0025,BP
+21,GO:0005685,U1 snRNP,12,6,2,0.1,0.0040,CC
+22,GO:0043189,H4/H2A histone acetyltransferase complex,15,8,2,0.14,0.0073,CC
+12,GO:0008061,chitin binding,4,11,2,0.15,0.00942,MF
+3,GO:0031497,chromatin assembly,8,12,2,0.16,0.0106,BP
+4,GO:0006334,nucleosome assembly,9,12,2,0.16,0.0106,BP
+5,GO:0034723,DNA replication-dependent nucleosome org...,8,1,1,0.01,0.0134,BP
+6,GO:0000395,mRNA 5'-splice site recognition,15,1,1,0.01,0.0134,BP
+13,GO:0042302,structural constituent of cuticle,3,1,1,0.01,0.01374,MF
+14,GO:0043874,acireductone synthase activity,7,1,1,0.01,0.01374,MF
+15,GO:1903136,cuprous ion binding,8,1,1,0.01,0.01374,MF
+16,GO:0061928,glutathione specific gamma-glutamylcyclo...,6,1,1,0.01,0.01374,MF
+23,GO:0032993,protein-DNA complex,3,11,2,0.19,0.0139,CC
+7,GO:0006333,chromatin assembly or disassembly,7,14,2,0.19,0.0144,BP
+24,GO:0033255,SAS acetyltransferase complex,18,1,1,0.02,0.0169,CC
+25,GO:0000243,commitment complex,12,1,1,0.02,0.0169,CC
+26,GO:0043601,nuclear replisome,14,1,1,0.02,0.0169,CC
+27,GO:0043625,delta DNA polymerase complex,15,1,1,0.02,0.0169,CC
+28,GO:0005581,collagen trimer,3,1,1,0.02,0.0169,CC
+17,GO:0044769,ATPase activity, coupled to transmembran...,13,15,2,0.21,0.01737,MF
+8,GO:0018205,peptidyl-lysine modification,9,42,3,0.56,0.0179,BP
+9,GO:0006812,cation transport,6,116,5,1.55,0.0184,BP
+29,GO:0033178,proton-transporting two-sector ATPase co...,6,13,2,0.22,0.0193,CC
+10,GO:0018393,internal peptidyl-lysine acetylation,11,18,2,0.24,0.0234,BP
+30,GO:0005750,mitochondrial respiratory chain complex ...,14,2,1,0.03,0.0336,CC
+18,GO:0043492,ATPase activity, coupled to movement of ...,10,55,3,0.76,0.03898,MF
+19,GO:0042626,ATPase activity, coupled to transmembran...,11,55,3,0.76,0.03898,MF
+20,GO:0016530,metallochaperone activity,3,3,1,0.04,0.04068,MF

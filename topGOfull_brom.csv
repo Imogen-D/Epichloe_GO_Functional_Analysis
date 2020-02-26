@@ -1,0 +1,31 @@
+,GO.ID,Term,Level,Annotated,Significant,Expected,Fishers,Ontology
+2,GO:0006334,nucleosome assembly,9,12,2,0.12,0.0060,BP
+3,GO:0048846,axon extension involved in axon guidance,15,1,1,0.01,0.0099,BP
+4,GO:0033615,mitochondrial proton-transporting ATP sy...,9,1,1,0.01,0.0099,BP
+5,GO:0034723,DNA replication-dependent nucleosome org...,8,1,1,0.01,0.0099,BP
+6,GO:0071711,basement membrane organization,6,1,1,0.01,0.0099,BP
+7,GO:0000395,mRNA 5'-splice site recognition,15,1,1,0.01,0.0099,BP
+11,GO:0005201,extracellular matrix structural constitu...,3,1,1,0.01,0.012,MF
+21,GO:0005581,collagen trimer,3,1,1,0.01,0.013,CC
+22,GO:0070823,HDA1 complex,14,1,1,0.01,0.013,CC
+23,GO:0000243,commitment complex,12,1,1,0.01,0.013,CC
+8,GO:0032984,protein-containing complex disassembly,5,22,2,0.22,0.0196,BP
+9,GO:0035066,positive regulation of histone acetylati...,14,2,1,0.02,0.0198,BP
+10,GO:0032986,protein-DNA complex disassembly,6,2,1,0.02,0.0198,BP
+24,GO:0000785,chromatin,10,46,3,0.61,0.021,CC
+12,GO:0030619,U1 snRNA binding,7,2,1,0.02,0.023,MF
+13,GO:0003964,RNA-directed DNA polymerase activity,7,2,1,0.02,0.023,MF
+14,GO:0004410,homocitrate synthase activity,6,2,1,0.02,0.023,MF
+15,GO:0031177,phosphopantetheine binding,5,21,2,0.24,0.024,MF
+25,GO:0032991,protein-containing complex,2,892,17,11.81,0.026,CC
+26,GO:0048476,Holliday junction resolvase complex,6,2,1,0.03,0.026,CC
+27,GO:0005871,kinesin complex,11,2,1,0.03,0.026,CC
+28,GO:0008290,F-actin capping protein complex,10,2,1,0.03,0.026,CC
+29,GO:0005854,nascent polypeptide-associated complex,8,2,1,0.03,0.026,CC
+16,GO:0072341,modified amino acid binding,3,23,2,0.27,0.029,MF
+17,GO:0047750,cholestenol delta-isomerase activity,6,3,1,0.03,0.035,MF
+30,GO:0120114,Sm-like protein family complex,3,23,2,0.3,0.036,CC
+18,GO:0016863,intramolecular oxidoreductase activity, ...,5,4,1,0.05,0.046,MF
+19,GO:0004523,RNA-DNA hybrid ribonuclease activity,9,4,1,0.05,0.046,MF
+20,GO:0003899,DNA-directed 5'-3' RNA polymerase activi...,8,32,2,0.37,0.053,MF
+1,GO:0000387,spliceosomal snRNP assembly,13,9,3,0.09,7.3e-05,BP
