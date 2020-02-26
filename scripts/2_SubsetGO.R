@@ -1,10 +1,11 @@
+#Read in file from http://ekhidna2.biocenter.helsinki.fi/sanspanz/
+#This code based on https://github.com/dwinter/genome_factory/wiki/Taking-a-gene-list-and-PANNZER-output-through-to-GO-term-enrichment
+
+library(topGO)
+
 AmarillansAnnoout <- read.delim("~/CoxExtension/GO output/AmarillansAnnoout.txt", stringsAsFactors=FALSE, na.strings = "n.d.")
-#BromicolaAnnoout <- read.delim("~/CoxExtension/GO output/BromicolaAnnoout.txt", stringsAsFactors=FALSE, na.strings =  "n.d.")
 
-subsetammaGO <- AmarillansAnnoout[which(AmarillansAnnoout$PPV >= 0.5), c(1, 5)]
-#subsetbromGO <- BromicolaAnnoout[which(BromicolaAnnoout$PPV >= 0.5), c(1, 5)]
-
-go_filt <- AmarillansAnnoout[which(AmarillansAnnoout$PPV >= 0.5),]                             
+go_filt <- AmarillansAnnoout[which(AmarillansAnnoout$PPV >= 0.5),]   #only with high PPV                          
 go_filt$id <- paste0('GO:', go_filt$id)
 panzer_to_golist <- function(panzer_df){
   go_df <- aggregate( id ~ qpid, data=panzer_df, FUN=c)
@@ -12,9 +13,6 @@ panzer_to_golist <- function(panzer_df){
 }
 all_golist <- panzer_to_golist(go_filt)
 str(head(all_golist))
-
-library(topGO)
-
 
 make_topGO_DO <- function(gene_list, ontology, gene2GO_list){
   topGO_data <- new("topGOdata", ontology = ontology, allGenes = gene_list,
@@ -72,10 +70,3 @@ topGO_all_table_brom <- topGO_all_table_brom[order(topGO_all_table_brom$Fishers)
 View(topGO_all_table_brom)
 
 write.csv(topGO_all_table_brom, file = "topGOfull_brom.csv", quote = FALSE)
-
-
-#Those with GO00045 activity (RNA-directed DNAPol activity)
-
-which(go_filt$id == "GO:0003964")
-which(go_filt_brom$id == "GO:0003964")
-go_filt_brom[6099,]
