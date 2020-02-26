@@ -3,7 +3,7 @@
 
 library(topGO)
 
-AmarillansAnnoout <- read.delim("~/CoxExtension/GO output/AmarillansAnnoout.txt", stringsAsFactors=FALSE, na.strings = "n.d.")
+AmarillansAnnoout <- read.delim("AmarillansAnnoout.txt", stringsAsFactors=FALSE, na.strings = "n.d.")
 
 go_filt <- AmarillansAnnoout[which(AmarillansAnnoout$PPV >= 0.5),]   #only with high PPV                          
 go_filt$id <- paste0('GO:', go_filt$id)
@@ -23,8 +23,8 @@ make_topGO_DO <- function(gene_list, ontology, gene2GO_list){
   fishers_table
 }
 
-amarillansuniquegeneid <- read.table("~/CoxExtension/LineageSpecificity/amarillansuniquegeneid.tsv", quote="\"", comment.char="", stringsAsFactors=FALSE)
-ortho_long <- read.delim("~/CoxExtension/ortho_long.tsv", header=FALSE, stringsAsFactors=FALSE)
+amarillansuniquegeneid <- read.table("amarillansuniquegeneid.tsv", quote="\"", comment.char="", stringsAsFactors=FALSE)
+ortho_long <- read.delim("ortho_long.tsv", header=FALSE, stringsAsFactors=FALSE)
 Eam702 <- ortho_long[which(ortho_long$V3 == "Eam702"),]
 uniquegenes <- amarillansuniquegeneid$V1
 geneList <- factor(as.integer(Eam702$V2 %in% uniquegenes))
@@ -45,7 +45,7 @@ write.csv(topGO_all_table, file = "topGOfull.csv", quote = FALSE)
 #for bromicola
 
 
-BromicolaAnnoout <- read.delim("~/CoxExtension/GO output/BromicolaAnnoout.txt", stringsAsFactors=FALSE, na.strings =  "n.d.")
+BromicolaAnnoout <- read.delim("BromicolaAnnoout.txt", stringsAsFactors=FALSE, na.strings =  "n.d.")
 subsetbromGO <- BromicolaAnnoout[which(BromicolaAnnoout$PPV >= 0.5), c(1, 5)]
 
 go_filt_brom <- BromicolaAnnoout[which(BromicolaAnnoout$PPV >= 0.5),]                             
@@ -53,8 +53,8 @@ go_filt_brom$id <- paste0('GO:', go_filt_brom$id)
 all_golist_brom <- panzer_to_golist(go_filt_brom)
 str(head(all_golist_brom))
 
-bromicolauniquegeneid <- read.table("~/CoxExtension/LineageSpecificity/bromicolauniquegeneid.tsv", quote="\"", comment.char="", stringsAsFactors=FALSE)
-ortho_long <- read.delim("~/CoxExtension/ortho_long.tsv", header=FALSE, stringsAsFactors=FALSE)
+bromicolauniquegeneid <- read.table("bromicolauniquegeneid.tsv", quote="\"", comment.char="", stringsAsFactors=FALSE)
+ortho_long <- read.delim("ortho_long.tsv", header=FALSE, stringsAsFactors=FALSE)
 Ebrom <- ortho_long[which(ortho_long$V3 == "EbroNfe1"),]
 uniquegenes_brom <- bromicolauniquegeneid$V1
 geneList_brom <- factor(as.integer(Ebrom$V2 %in% uniquegenes_brom))
